@@ -85,7 +85,7 @@ Main Components
 
 .cd-section:nth-of-type(2)>div {
   background-color: #ffffff;
-  background-image: url(/img/bgimg.png);
+  background-image: url(../img/bgimg.png);
 
 }
 
@@ -95,7 +95,7 @@ Main Components
 
 .cd-section:nth-of-type(4)>div {
   background-color: #ffffff;
-  background-image: url(/img/bgimg.png);
+  background-image: url(../img/bgimg.png);
 
 }
 

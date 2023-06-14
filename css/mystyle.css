@@ -250,15 +250,6 @@ section>div {
     right: 26%;
 }
 
-/* .cd-section .about{
-    position: absolute;
-    background-color: aquamarine;
-    top: 50%;
-    left: 55%;
-    transform: translate(-50%, -50%);
-    width: 70%;
-    padding: 30px 50px;
-} */
 
 .contact_text3{
     /* border: 1px solid #000; */
@@ -266,7 +257,7 @@ section>div {
     color: #000;
     position: absolute;
     top: 24%;
-    right: 31%;
+    left: 56%;
     font-weight: bold;
 }
 
@@ -379,7 +370,6 @@ section>div {
 
 .main_menu.on {
     top: 0%;
-
 }
 
 
