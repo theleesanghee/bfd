@@ -1,0 +1,403 @@
+/* 공용 */
+section>div {
+    position: relative;
+}
+
+
+/* top menu */
+
+
+.top {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* border: 1px solid rgb(255, 255, 255); */
+    width: 80%;
+    display: flex;
+    color: #000;
+    font-weight: bold;
+    justify-content: space-between;
+    z-index: 10000;
+}
+
+
+.top h1 {
+    font-size: 30px;
+}
+
+
+.top .menu {
+    width: 70px;
+    height: 70px;
+    border: 2px solid rgb(0, 0, 0);
+    position: relative;
+    padding-right: 20px;
+}
+
+
+.top .menu span {
+    width: 100%;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    display: block;
+    position: absolute;
+    transition: all .5s;
+}
+
+
+.top .menu span:nth-child(1) {
+    top: 20%;
+    left: 50%;
+    width: 60px;
+    transform: translate(-50%, -50%);
+
+}
+
+
+.top .menu span:nth-child(2) {
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    transform: translate(-50%, -50%);
+}
+
+
+.top .menu span:nth-child(3) {
+    bottom: 20%;
+    left: 50%;
+    width: 60px;
+    transform: translate(-50%, -50%);
+
+}
+
+
+.top .menu.on span:nth-child(1){ 
+    top:50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+
+.top .menu.on span:nth-child(2){
+    opacity: 0;
+}
+
+.top .menu.on span:nth-child(3){
+    top:50%;
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+
+
+
+/* 1번페이지 */
+
+.cd-section_visible{
+    background-color: #E60022;
+}
+
+.plus {
+    position: absolute;
+    align-items: center;
+    top: 200px;
+    left: 110px;
+    animation: plus 1s infinite;
+}
+
+.plus2 {
+    position: absolute;
+    align-items: center;
+    bottom: 100px;
+    right: 110px;
+    animation: plus 1s infinite;
+}
+
+.plus3 {
+    position: absolute;
+    align-items: center;
+    bottom: 100px;
+    left: 110px;
+    animation: plus 1s infinite;
+}
+
+.plus4 {
+    position: absolute;
+    align-items: center;
+    top: 200px;
+    right: 110px;
+    animation: plus 1s infinite;
+}
+
+
+@keyframes plus {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.bud img {
+    animation: bud 2.5s infinite;
+    opacity: 0;
+}
+
+/* .bud {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+} */
+
+
+@keyframes bud {
+    0% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.bud img:nth-child(1) {
+    animation-delay: 0s;
+    bottom: 30px;
+    left: 30px;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+
+.bud img:nth-child(2) {
+    animation-delay: 0.5s;
+    bottom: 170px;
+    left: 310px;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+
+}
+
+.bud img:nth-child(3) {
+    animation-delay: 1s;
+    position: absolute;
+    top: 50%;
+    left: 38%;
+    width: 200px;
+    height: 200px;
+}
+
+.bud img:nth-child(4) {
+    animation-delay: 1.5s;
+    top: 30%;
+    right: 30%;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+
+}
+
+.bud img:nth-child(5) {
+    animation-delay: 2s;
+    top: 15%;
+    right: 10%;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+}
+
+.main_text{
+    /* border: 1px solid rgb(63, 59, 59); */
+    font-size: 100px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    top: 400px;
+    left: 200px;
+}
+
+.cd-section_visible{
+    background-color: #E60022;
+}
+
+
+.cd-section.about h2 {
+    /* border: 1px solid #000; */
+    font-size: 90px;
+    color: black;
+    position: absolute;
+    top: 35%;
+    left: 55%;
+    font-size: 38px;
+}
+
+
+.about_img {
+
+/* border: 1px solid #000; */
+    padding-left: 9%;
+    padding-top: 15%;
+}
+
+.play_about {
+    /* border: 1px solid #000; */
+    position: absolute;
+    top: 26%;
+    right: 26%;
+}
+
+/* .cd-section .about{
+    position: absolute;
+    background-color: aquamarine;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    padding: 30px 50px;
+} */
+
+.contact_text3{
+    /* border: 1px solid #000; */
+    font-size: 90px;
+    color: #000;
+    position: absolute;
+    top: 24%;
+    right: 31%;
+    font-weight: bold;
+}
+
+
+.about_text2 b{
+    /* border: 1px solid #000; */
+    font-size: 50px;
+    color: transparent;
+    position: absolute;
+    bottom: 8%;
+    left: 25%;
+    -webkit-text-stroke: 1px black;
+}
+
+
+.about_text2{
+    width: 50px;
+    height: 1px;
+    font-weight: bold;
+}
+
+
+.cd-section.design{
+
+}
+
+
+.anotherdesign1{
+    /* border: 1px solid #000; */
+    padding-left: 10%;
+    padding-top: 12%;
+}
+
+
+.play{
+    position: absolute;
+    top:30%;
+    right: 20%;
+}
+
+
+.cd-section.design h2{
+    /* border: 1px solid #000; */
+    font-size: 90px;
+    color: #fff;
+    position: absolute;
+    top: 430px;
+    left: 56%;
+    font-size: 110px;
+    font-weight: bold;
+}
+
+
+.cd-section.contact{
+    background-image: url(/img/bgimg.png);
+}
+
+
+.contact_text {
+    /* border: 1px solid #000; */
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+}
+
+
+.contact_text h2{
+    color: #000;
+    font-size: 70px;
+    font-weight: bold;
+    position: absolute;
+    top: 33%;
+    left: 52%;
+}
+
+
+.contact_text1 {
+    color: #000;
+    font-size: 70px;
+    position: absolute;
+    top: 45%;
+    left: 52%;
+
+}
+
+
+.logo {
+    /* border: 1px solid #000; */
+    position: absolute;
+    top: 10%;
+    left: -11%;
+}
+
+
+.main_menu {
+    border: 1px solid #000;
+    position: absolute;
+    top: -100%;
+    font-size: 150px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 9%;
+    height: 100vh;
+    width: 100vw;
+    transition: all 0.5s;
+    background-color: #E60022;
+}
+
+.main_menu.on {
+    top: 0%;
+
+}
+
+
+.contact_text2 {
+    /* border: 1px solid #000; */
+    font-size: 50px;
+    font-weight: bold;
+    color: transparent;
+    position: absolute;
+    bottom: 8%;
+    left: 25%;
+    -webkit-text-stroke: 1px black;
+}
+
+
+/* 
+.contact_text2{
+    border: 1px solid #000;
+    font-size: 100px;
+    color: #000;
+} */

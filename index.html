@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<link rel="stylesheet" href="css/mystyle.css">
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+	<title>Page Scroll Effects | CodyHouse</title>
+</head>
+<!-- hijacking: on/off - animation: none/scaleDown/rotate/gallery/catch/opacity/fixed/parallax -->
+<body data-hijacking="on" data-animation="scaleDown">
+	<section class="cd-section visible">
+		<div>
+			<img class="plus" src="./img/icon2.png" alt="">
+			<img class="plus2" src="./img/icon2.png" alt="">
+			<img class="plus3" src="./img/icon1.png" alt="">
+			<img class="plus4" src="./img/icon1.png" alt="">
+			<div class="bud">
+				<img src="./img/brid01.png" alt="">
+				<img src="./img/brid02.png" alt="">
+				<img src="./img/brid03.png" alt="">
+				<img src="./img/brid04.png" alt="">
+				<img src="./img/brid05.png" alt="">
+			</div>
+			<div class="main_text">
+				<b>BEYOND</b><br>
+                <b>FREEDOM</b>
+			</div>
+		</div>
+	</section>
+	<!-- <nav>
+		<div class="main_menu">
+		<p><a href="#">main</a></p>
+		<p><a href="#">about</a></p>
+		<p><a href="#">design</a></p>
+		<p><a href="#">contact</a></p>
+		</div>
+	</nav> 
+	-->
+	<section class="cd-section about">
+		<div class="about_text">
+			<img class="about_img" src="./img/maskgroup11.png" alt="">
+			<div class="play_about">
+				<a href="#"><img src="./img/play_about.png" alt=""></a></div>
+			<div class="about_text0">
+			<h2>이상희<br>
+			기획력되는 디자이너<br><br>
+			저는 숨 쉬듯 아이디어를 떠올리고<br>
+			그 속의 진짜를 발견하는 것이 ‘ 모토’<br><br>
+			제 포트폴리오의 모든 솔루션은<br>
+			나만의 이야기를 바탕으로 완성됩니다.<br><br>
+			아이디어에 새로움 숨을 불어 넣다<br>
+			</h2>
+			<div class="about_text2">
+			<b>ANOTHER DESIGN ANOTHER EPISODE</b>
+			</div>
+			<b class="contact_text3">about</b>
+			</div>
+	</section>
+	<section class="cd-section design">
+		<div class="anotherdesign">
+			<img class="anotherdesign1" src="./img/design_main.png" alt="">
+			<div class="anotherdesign_play">
+				<a href="./maindesign/maindesign.html"><img class="play" src="./img/play.png" alt=""></a>
+			</div>
+			<h2>ANOTHER<br>DESIGN</h2>
+		</div>
+	</section>
+	<section class="cd-section contact">
+		<div class="contact_text">
+			<img class="logo" src="./img/main_contact_bird.png" alt="">
+			<h2>Contact<br><br><br><br>
+			010-3796-8412<br>
+			</h2>
+			<b class="contact_text1">Leesanghee<br>
+			creative_m@naver.com<br></b>
+			<div class="contact_text2">ANOTHER DESIGN ANOTHER EPISODE</div>
+		</div>
+	</section>
+	<!-- <section class="cd-section main">
+		<div>
+			<h2>Section 5</h2>
+		</div> -->
+	</section>
+	<div class="top">
+		<h1>BEYOND<br>
+			<b>FREEDOM
+		</h1>
+		<a href="#">
+			<div class="menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</a>
+	</div>
+	<!-- <div class="top_menu">
+	
+		</div> -->
+
+	<div class="main_menu">
+		<ul>
+			<li><a href="#">main</a></li>
+			<li><a href="#">about</a></li>
+			<li><a href="#">design</a></li>
+			<li><a href="#">contact</a></li>
+		</ul>
+	</div>
+	<!-- <nav>
+		<ul class="cd-vertical-nav">
+			<li><a href="#0" class="cd-prev inactive">Next</a></li>
+			<li><a href="#0" class="cd-next">Prev</a></li>
+		</ul>
+	</nav> .cd-vertical-nav -->
+	<script src="js/jquery-2.1.4.js"></script>
+	<script src="js/velocity.min.js"></script>
+	<script src="js/velocity.ui.min.js"></script>
+	<script src="js/main.js"></script> <!-- Resource jQuery -->
+	<script>
+		$('.menu').click(function(){
+			if($('.main_menu').hasClass('on') == true){
+				$('.main_menu').removeClass('on')
+				$(this).removeClass('on')
+			}else{
+				$('.main_menu').addClass('on')
+				$(this).addClass('on')
+			}
+		})
+	</script>
+	<script>
+		$('.main_menu li').click(function () {
+			let target = $(this).index()
+		$('.main_menu').removeClass('on')
+		$('.menu').removeClass('on')
+
+			$('body').children('section').eq(target).addClass('visible').siblings().removeClass('visible')
+			$('body').children('section').eq(target).children('div').css({
+				'opacity': '1',
+				'box-shadow': ' rgba(25, 30, 46, 0.4) 0px 0px 0px 0px',
+				'transform': 'translateY(0px) scale(1)',
+				'transition': 'all 1s'
+			})
+			$('body').children('section').eq(target).prevAll('section').children().css({
+				'opacity': '0',
+				'box-shadow': ' rgba(25, 30, 46, 0.4) 0px 0px 0px 0px',
+				'transform': 'translateY(0) scale(0.8)',
+				'transition': 'all 0.5s'
+			})
+			$('body').children('section').eq(target).nextAll('section').children().css({
+				'opacity': '1',
+				'box-shadow': ' rgba(25, 30, 46, 0.4) 0px 0px 0px 0px',
+				'transform': 'translateY(100%) scale(1)',
+				'transition': 'all 0.5s'
+			})
+		})
+	</script>
+</body>
+
+</html>
