@@ -12,9 +12,10 @@
 	<link rel="stylesheet" href="css/mystyle.css">
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
 
-	<title>Page Scroll Effects | CodyHouse</title>
+	<title> | ANOTHER DESIGN | </title>
 </head>
 <!-- hijacking: on/off - animation: none/scaleDown/rotate/gallery/catch/opacity/fixed/parallax -->
+
 <body data-hijacking="on" data-animation="scaleDown">
 	<section class="cd-section visible">
 		<div>
@@ -31,7 +32,7 @@
 			</div>
 			<div class="main_text">
 				<b>BEYOND</b><br>
-                <b>FREEDOM</b>
+				<b>FREEDOM</b>
 			</div>
 		</div>
 	</section>
@@ -42,26 +43,34 @@
 		<p><a href="#">design</a></p>
 		<p><a href="#">contact</a></p>
 		</div>
-	</nav> 
+	</nav>
 	-->
 	<section class="cd-section about">
 		<div class="about_text">
-			<img class="about_img" src="./img/maskgroup11.png" alt="">
-			<div class="play_about">
-				<a href="#"><img src="./img/play_about.png" alt=""></a></div>
-			<div class="about_text0">			
-				<b class="contact_text3">about</b>
-			<h2>이상희<br>
-			기획력되는 디자이너<br><br>
-			저는 숨 쉬듯 아이디어를 떠올리고<br>
-			그 속의 진짜를 발견하는 것이 ‘ 모토’<br><br>
-			제 포트폴리오의 모든 솔루션은<br>
-			나만의 이야기를 바탕으로 완성됩니다.<br><br>
-			아이디어에 새로움 숨을 불어 넣다<br>
-			</h2></div>
-			<div class="about_text2">
-			<b>ANOTHER DESIGN ANOTHER EPISODE</b>
+			<div class="about_cont">
+				<div class="about_img">
+					<img src="./img/maskgroup11.png" alt="">
+				</div>
+				<div class="about_text0">
+					<div class="about_tit">
+						<b class="contact_text3">about</b>
+						<a href="#"><img src="./img/play_about.png" alt=""></a>
+					</div>
+					<h2>이상희<br>
+						기획력되는 디자이너<br><br>
+						저는 숨 쉬듯 아이디어를 떠올리고<br>
+						그 속의 진짜를 발견하는 것이 ‘ 모토’<br><br>
+						제 포트폴리오의 모든 솔루션은<br>
+						나만의 이야기를 바탕으로 완성됩니다.<br><br>
+						아이디어에 새로움 숨을 불어 넣다<br>
+					</h2>
+				</div>
 			</div>
+			<div class="about_text2">
+				<b class="pc">ANOTHER DESIGN ANOTHER EPISODE</b>
+				<b class="m">ANOTHER DESIGN<br> ANOTHER EPISODE</b>
+			</div>
+		</div>
 
 	</section>
 	<section class="cd-section design">
@@ -73,21 +82,34 @@
 			<h2>ANOTHER<br>DESIGN</h2>
 		</div>
 	</section>
+
+	<section class="cd-section main">
+		<div class="media">
+			<h2>ANOTHER<br>MEDIA</h2>
+			<div class="media_cont">
+				<a href="https://www.youtube.com/embed/A4KeToDkFUI"><img src="./img/beyondfreedom1.jpg" alt=""></a>
+				<a href="https://www.youtube.com/embed/A4KeToDkFUI"><img src="./img/beyondfreedom2.jpg" alt=""></a>
+				<!-- <video width="660px" height="410px" poster="./img/maskgroup11.png" autoplay controls>
+					<source src="mp4" type="video/mp4">
+				</video>
+				<video width="660px" height="410px" poster="./img/maskgroup11.png" autoplay controls>
+					<source src="mp4" type="video/mp4">
+				</video> -->
+				<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/A4KeToDkFUI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/A4KeToDkFUI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+			</div>
+		</div>
+	</section>
 	<section class="cd-section contact">
 		<div class="contact_text">
 			<img class="logo" src="./img/main_contact_bird.png" alt="">
 			<h2>Contact<br><br><br><br>
-			010-3796-8412<br>
+				010-3796-8412<br>
 			</h2>
 			<b class="contact_text1">Leesanghee<br>
-			creative_m@naver.com<br></b>
+				creative_m@naver.com<br></b>
 			<div class="contact_text2">ANOTHER DESIGN ANOTHER EPISODE</div>
 		</div>
-	</section>
-	<!-- <section class="cd-section main">
-		<div>
-			<h2>Section 5</h2>
-		</div> -->
 	</section>
 	<div class="top">
 		<h1>BEYOND<br>
@@ -102,14 +124,13 @@
 		</a>
 	</div>
 	<!-- <div class="top_menu">
-	
 		</div> -->
-
 	<div class="main_menu">
 		<ul>
 			<li><a href="#">main</a></li>
 			<li><a href="#">about</a></li>
 			<li><a href="#">design</a></li>
+			<li><a href="#">media</a></li>
 			<li><a href="#">contact</a></li>
 		</ul>
 	</div>
@@ -124,11 +145,11 @@
 	<script src="js/velocity.ui.min.js"></script>
 	<script src="js/main.js"></script> <!-- Resource jQuery -->
 	<script>
-		$('.menu').click(function(){
-			if($('.main_menu').hasClass('on') == true){
+		$('.menu').click(function () {
+			if ($('.main_menu').hasClass('on') == true) {
 				$('.main_menu').removeClass('on')
 				$(this).removeClass('on')
-			}else{
+			} else {
 				$('.main_menu').addClass('on')
 				$(this).addClass('on')
 			}
@@ -137,8 +158,8 @@
 	<script>
 		$('.main_menu li').click(function () {
 			let target = $(this).index()
-		$('.main_menu').removeClass('on')
-		$('.menu').removeClass('on')
+			$('.main_menu').removeClass('on')
+			$('.menu').removeClass('on')
 
 			$('body').children('section').eq(target).addClass('visible').siblings().removeClass('visible')
 			$('body').children('section').eq(target).children('div').css({

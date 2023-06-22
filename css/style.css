@@ -94,13 +94,12 @@ Main Components
 }
 
 .cd-section:nth-of-type(4)>div {
-  background-color: #ffffff;
-  background-image: url(../img/bgimg.png);
-
+  background-color: #E60022;
 }
 
 .cd-section:nth-of-type(5)>div {
-  background-color: #f06a59;
+  background-color: #ffffff;
+  background-image: url(../img/bgimg.png);
 }
 
 [data-animation="parallax"] .cd-section>div,

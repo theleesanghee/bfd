@@ -1,7 +1,8 @@
 /* 공용 */
 section>div {
-    position: relative;
+    position: relative !important;
 }
+
 
 
 /* top menu */
@@ -148,7 +149,6 @@ section>div {
     top: 50%;
 } */
 
-
 @keyframes bud {
     0% {
         opacity: 1;
@@ -225,8 +225,64 @@ section>div {
 }
 
 
-.cd-section.about h2 {
+.about_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_cont{
     /* border: 1px solid #000; */
+    display: flex;
+    color:#000;
+    padding-top: 40px;
+}
+
+.about_img{
+    margin-right: 20px;
+}
+.about_img img{
+    width: 100%;
+}
+
+.about_tit{
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    
+}
+
+.contact_text3{
+    font-size: 90px;
+}
+
+.about_tit img{
+    margin-left: 20px;
+}
+.about_text2{
+    display: block;
+    width: 100%;
+    transform:translateY(80px);
+}
+.about_text2 b{
+    /* border: 1px solid #000; */
+    font-size: 50px;
+    color: transparent;
+    -webkit-text-stroke: 1px black;
+    display: block;
+    text-align: center;
+
+}
+.about_text2 b.pc{display: block;}
+.about_text2 b.m{display: none; text-align: left;}
+
+
+/*  이전 */
+/* 
+.about_img {
+.cd-section.about h2 {
+    border: 1px solid #000;
     font-size: 90px;
     color: black;
     position: absolute;
@@ -235,16 +291,13 @@ section>div {
     font-size: 38px;
 }
 
-
-.about_img {
-
-/* border: 1px solid #000; */
+border: 1px solid #000;
     padding-left: 9%;
     padding-top: 15%;
 }
 
 .play_about {
-    /* border: 1px solid #000; */
+    border: 1px solid #000;
     position: absolute;
     top: 26%;
     right: 26%;
@@ -252,7 +305,7 @@ section>div {
 
 
 .contact_text3{
-    /* border: 1px solid #000; */
+    border: 1px solid #000;
     font-size: 90px;
     color: #000;
     position: absolute;
@@ -263,7 +316,7 @@ section>div {
 
 
 .about_text2 b{
-    /* border: 1px solid #000; */
+    border: 1px solid #000;
     font-size: 50px;
     color: transparent;
     position: absolute;
@@ -277,7 +330,7 @@ section>div {
     width: 50px;
     height: 1px;
     font-weight: bold;
-}
+}  */
 
 
 .cd-section.design{
@@ -311,10 +364,45 @@ section>div {
 }
 
 
-.cd-section.contact{
-    background-image: url(/img/bgimg.png);
+
+/* ANOTHER MEDIA */
+
+.media{
+    border: 1px solid #000;
+    /* position: absolute;
+    top: 50%;
+    left: 55%; */
 }
 
+.media {
+    position: relative;
+    padding:80px;
+    padding-top:200px;
+}
+
+
+.media .media_cont{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.media h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 110px;
+    font-weight: bold;
+}
+
+
+.media a {
+
+margin: 20px;
+
+}
+
+
+/* contact */
 
 .contact_text {
     /* border: 1px solid #000; */
@@ -350,7 +438,7 @@ section>div {
     /* border: 1px solid #000; */
     position: absolute;
     top: 10%;
-    left: -11%;
+    left: -14%;
 }
 
 
@@ -384,10 +472,48 @@ section>div {
     -webkit-text-stroke: 1px black;
 }
 
-
 /* 
 .contact_text2{
     border: 1px solid #000;
     font-size: 100px;
     color: #000;
 } */
+
+@media (max-width:720px){
+
+    .top{
+        background-color: rgba(255,255, 255,0.5);
+        width: 95%;
+        padding:20px;
+        backdrop-filter: blur(10px);
+        border-radius: 5px;
+
+    }
+    .about_cont{
+        flex-direction: column;
+    }
+    .about_img{
+        margin-right: 0px;
+    }
+    .about_text0{
+        padding-left:20px;
+    }
+
+
+    .about_text2{
+
+    }
+    .about_text2 b.pc{display: none;}
+    .about_text2 b.m{display: block;}
+
+
+
+    .media_cont{
+        flex-direction: column;
+    }
+
+
+    .media{  flex-direction: column;}
+}
+
+
