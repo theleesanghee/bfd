@@ -52,7 +52,6 @@ section>div {
     left: 50%;
     width: 60px;
     transform: translate(-50%, -50%);
-
 }
 
 
@@ -293,8 +292,6 @@ section>div {
     text-align: left;
 }
 
-
-
 .cd-section.design {}
 
 
@@ -308,7 +305,7 @@ section>div {
 .play {
     position: absolute;
     top: 30%;
-    right: 20%;
+    right: 15%;
 }
 
 
@@ -439,6 +436,7 @@ section>div {
     font-size: 100px;
     color: #000;
 } */
+
 
 @media (max-width:720px) {
 
